@@ -1,0 +1,13 @@
+name: coptic_reader_synch
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - ffmpeg
+  - pip:
+    - faster-whisper==1.1.1
+    - rapidfuzz==3.9.7
+    - numpy>=1.26,<2.0
+    - pytest>=8.0

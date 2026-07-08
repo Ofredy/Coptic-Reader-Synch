@@ -3,6 +3,7 @@ from typing import Iterator
 import numpy as np
 
 from faster_whisper import WhisperModel
+from faster_whisper.audio import decode_audio
 
 from audio_source import AudioSource
 
@@ -16,11 +17,24 @@ class WhisperTranscriber:
         self._model = WhisperModel(model_size, device=device, compute_type=compute_type)
 
     def transcribe_file(self, path: str) -> Iterator[WordToken]:
-        """One-shot transcription of a full audio file. Best accuracy."""
+        """One-shot transcription of a full audio file. Best accuracy.
+
+        Word tokens that fall in silent audio are dropped by checking the RMS
+        energy of the audio at the word's timestamp range. This prevents
+        Whisper hallucinations during silence from reaching the aligner.
+        """
+        audio = decode_audio(path)  # float32 numpy at 16kHz
+        sample_rate = 16_000
         segments, _ = self._model.transcribe(path, word_timestamps=True, vad_filter=True)
         for segment in segments:
             if segment.words:
                 for word in segment.words:
+                    s = int(word.start * sample_rate)
+                    e = int(word.end   * sample_rate)
+                    if e > s:
+                        rms = np.sqrt(np.mean(audio[s:e] ** 2))
+                        if rms < SILENCE_RMS_THRESHOLD:
+                            continue
                     yield WordToken(
                         word=word.word.strip(),
                         start_sec=word.start,
@@ -61,7 +75,7 @@ class WhisperTranscriber:
                 audio = chunk
                 overlap_duration = 0.0
 
-            segments, _ = self._model.transcribe(audio, word_timestamps=True)
+            segments, _ = self._model.transcribe(audio, word_timestamps=True, vad_filter=True)
 
             for segment in segments:
                 if not segment.words:

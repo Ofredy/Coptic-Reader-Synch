@@ -8,6 +8,8 @@ from audio_source import AudioSource
 
 WordToken = namedtuple("WordToken", ["word", "start_sec", "end_sec"])
 
+SILENCE_RMS_THRESHOLD = 0.01  # chunks below this RMS energy are treated as silence
+
 
 class WhisperTranscriber:
     def __init__(self, model_size: str = "base", device: str = "cpu", compute_type: str = "int8"):
@@ -15,7 +17,7 @@ class WhisperTranscriber:
 
     def transcribe_file(self, path: str) -> Iterator[WordToken]:
         """One-shot transcription of a full audio file. Best accuracy."""
-        segments, _ = self._model.transcribe(path, word_timestamps=True)
+        segments, _ = self._model.transcribe(path, word_timestamps=True, vad_filter=True)
         for segment in segments:
             if segment.words:
                 for word in segment.words:
@@ -44,6 +46,13 @@ class WhisperTranscriber:
 
         for chunk in source.chunks():
             chunk_duration = len(chunk) / sample_rate
+
+            # Skip silent chunks — energy check before sending to Whisper
+            rms = np.sqrt(np.mean(chunk ** 2))
+            if rms < SILENCE_RMS_THRESHOLD:
+                chunk_offset_sec += chunk_duration
+                prev_overlap = np.array([], dtype=np.float32)
+                continue
 
             if len(prev_overlap) > 0:
                 audio = np.concatenate([prev_overlap, chunk])

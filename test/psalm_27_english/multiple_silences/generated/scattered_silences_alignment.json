@@ -1,0 +1,2153 @@
+[
+  {
+    "ref_word": "Psalm",
+    "word_index": 0,
+    "char_offset": 0,
+    "line_number": 1,
+    "start_sec": 0.59,
+    "end_sec": 1.23,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "27.",
+    "word_index": 1,
+    "char_offset": 6,
+    "line_number": 1,
+    "start_sec": 1.23,
+    "end_sec": 2.13,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "The",
+    "word_index": 2,
+    "char_offset": 10,
+    "line_number": 1,
+    "start_sec": 3.39,
+    "end_sec": 3.75,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Lord",
+    "word_index": 3,
+    "char_offset": 14,
+    "line_number": 1,
+    "start_sec": 3.75,
+    "end_sec": 4.17,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "is",
+    "word_index": 4,
+    "char_offset": 19,
+    "line_number": 1,
+    "start_sec": 4.17,
+    "end_sec": 4.55,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 5,
+    "char_offset": 22,
+    "line_number": 1,
+    "start_sec": 4.55,
+    "end_sec": 4.91,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "light",
+    "word_index": 6,
+    "char_offset": 25,
+    "line_number": 1,
+    "start_sec": 4.91,
+    "end_sec": 5.47,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 7,
+    "char_offset": 32,
+    "line_number": 2,
+    "start_sec": 5.47,
+    "end_sec": 5.79,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 8,
+    "char_offset": 36,
+    "line_number": 2,
+    "start_sec": 5.79,
+    "end_sec": 6.13,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "salvation,",
+    "word_index": 9,
+    "char_offset": 39,
+    "line_number": 2,
+    "start_sec": 6.13,
+    "end_sec": 6.95,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "whom",
+    "word_index": 10,
+    "char_offset": 50,
+    "line_number": 2,
+    "start_sec": 7.39,
+    "end_sec": 7.89,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "shall",
+    "word_index": 11,
+    "char_offset": 55,
+    "line_number": 2,
+    "start_sec": 7.89,
+    "end_sec": 8.15,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 12,
+    "char_offset": 61,
+    "line_number": 2,
+    "start_sec": 8.15,
+    "end_sec": 8.55,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "fear?",
+    "word_index": 13,
+    "char_offset": 63,
+    "line_number": 2,
+    "start_sec": 8.55,
+    "end_sec": 9.11,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "The",
+    "word_index": 14,
+    "char_offset": 69,
+    "line_number": 2,
+    "start_sec": 10.15,
+    "end_sec": 10.33,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "is",
+    "word_index": 16,
+    "char_offset": 78,
+    "line_number": 2,
+    "start_sec": 10.77,
+    "end_sec": 11.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 17,
+    "char_offset": 81,
+    "line_number": 2,
+    "start_sec": 11.03,
+    "end_sec": 11.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 19,
+    "char_offset": 95,
+    "line_number": 3,
+    "start_sec": 11.69,
+    "end_sec": 12.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 20,
+    "char_offset": 98,
+    "line_number": 3,
+    "start_sec": 12.03,
+    "end_sec": 12.31,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "life,",
+    "word_index": 21,
+    "char_offset": 101,
+    "line_number": 3,
+    "start_sec": 12.31,
+    "end_sec": 12.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 22,
+    "char_offset": 107,
+    "line_number": 3,
+    "start_sec": 13.51,
+    "end_sec": 13.75,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "shall",
+    "word_index": 24,
+    "char_offset": 115,
+    "line_number": 3,
+    "start_sec": 14.17,
+    "end_sec": 14.49,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 25,
+    "char_offset": 121,
+    "line_number": 3,
+    "start_sec": 14.49,
+    "end_sec": 14.81,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "be",
+    "word_index": 26,
+    "char_offset": 123,
+    "line_number": 3,
+    "start_sec": 14.81,
+    "end_sec": 15.11,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "afraid?",
+    "word_index": 27,
+    "char_offset": 126,
+    "line_number": 3,
+    "start_sec": 15.11,
+    "end_sec": 15.63,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "When",
+    "word_index": 28,
+    "char_offset": 134,
+    "line_number": 3,
+    "start_sec": 16.67,
+    "end_sec": 16.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 29,
+    "char_offset": 139,
+    "line_number": 3,
+    "start_sec": 16.99,
+    "end_sec": 17.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "wicked,",
+    "word_index": 30,
+    "char_offset": 143,
+    "line_number": 3,
+    "start_sec": 17.25,
+    "end_sec": 17.61,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "even",
+    "word_index": 31,
+    "char_offset": 151,
+    "line_number": 3,
+    "start_sec": 18.27,
+    "end_sec": 18.69,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "mine",
+    "word_index": 32,
+    "char_offset": 157,
+    "line_number": 4,
+    "start_sec": 18.69,
+    "end_sec": 19.21,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "enemies",
+    "word_index": 33,
+    "char_offset": 162,
+    "line_number": 4,
+    "start_sec": 19.21,
+    "end_sec": 19.81,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 34,
+    "char_offset": 170,
+    "line_number": 4,
+    "start_sec": 19.81,
+    "end_sec": 20.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 35,
+    "char_offset": 174,
+    "line_number": 4,
+    "start_sec": 20.25,
+    "end_sec": 20.55,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "foes,",
+    "word_index": 36,
+    "char_offset": 177,
+    "line_number": 4,
+    "start_sec": 20.55,
+    "end_sec": 21.29,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "came",
+    "word_index": 37,
+    "char_offset": 183,
+    "line_number": 4,
+    "start_sec": 21.71,
+    "end_sec": 21.81,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me",
+    "word_index": 39,
+    "char_offset": 193,
+    "line_number": 4,
+    "start_sec": 22.25,
+    "end_sec": 22.57,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "to",
+    "word_index": 40,
+    "char_offset": 196,
+    "line_number": 4,
+    "start_sec": 22.57,
+    "end_sec": 22.85,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "eat",
+    "word_index": 41,
+    "char_offset": 199,
+    "line_number": 4,
+    "start_sec": 22.85,
+    "end_sec": 23.17,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up",
+    "word_index": 42,
+    "char_offset": 203,
+    "line_number": 4,
+    "start_sec": 23.17,
+    "end_sec": 23.41,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "flesh,",
+    "word_index": 44,
+    "char_offset": 209,
+    "line_number": 4,
+    "start_sec": 23.67,
+    "end_sec": 24.27,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "they",
+    "word_index": 45,
+    "char_offset": 216,
+    "line_number": 4,
+    "start_sec": 24.69,
+    "end_sec": 24.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "stumbled",
+    "word_index": 46,
+    "char_offset": 222,
+    "line_number": 5,
+    "start_sec": 24.99,
+    "end_sec": 25.69,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 47,
+    "char_offset": 231,
+    "line_number": 5,
+    "start_sec": 25.69,
+    "end_sec": 26.21,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "fell.",
+    "word_index": 48,
+    "char_offset": 235,
+    "line_number": 5,
+    "start_sec": 26.21,
+    "end_sec": 26.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Though",
+    "word_index": 49,
+    "char_offset": 241,
+    "line_number": 5,
+    "start_sec": 27.71,
+    "end_sec": 28.05,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "a",
+    "word_index": 50,
+    "char_offset": 248,
+    "line_number": 5,
+    "start_sec": 28.05,
+    "end_sec": 28.31,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "host",
+    "word_index": 51,
+    "char_offset": 250,
+    "line_number": 5,
+    "start_sec": 28.31,
+    "end_sec": 28.81,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "should",
+    "word_index": 52,
+    "char_offset": 255,
+    "line_number": 5,
+    "start_sec": 28.81,
+    "end_sec": 29.21,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "encamp",
+    "word_index": 53,
+    "char_offset": 262,
+    "line_number": 5,
+    "start_sec": 29.45,
+    "end_sec": 29.75,
+    "confidence": 0.8
+  },
+  {
+    "ref_word": "against",
+    "word_index": 54,
+    "char_offset": 269,
+    "line_number": 5,
+    "start_sec": 29.75,
+    "end_sec": 30.05,
+    "confidence": 0.8333
+  },
+  {
+    "ref_word": "should",
+    "word_index": 63,
+    "char_offset": 318,
+    "line_number": 6,
+    "start_sec": 34.37,
+    "end_sec": 35.19,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "rise",
+    "word_index": 64,
+    "char_offset": 325,
+    "line_number": 6,
+    "start_sec": 35.19,
+    "end_sec": 35.69,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up",
+    "word_index": 65,
+    "char_offset": 330,
+    "line_number": 6,
+    "start_sec": 35.69,
+    "end_sec": 36.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "against",
+    "word_index": 66,
+    "char_offset": 333,
+    "line_number": 6,
+    "start_sec": 36.03,
+    "end_sec": 36.43,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me,",
+    "word_index": 67,
+    "char_offset": 342,
+    "line_number": 7,
+    "start_sec": 36.43,
+    "end_sec": 36.79,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 68,
+    "char_offset": 346,
+    "line_number": 7,
+    "start_sec": 37.31,
+    "end_sec": 37.53,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "will",
+    "word_index": 70,
+    "char_offset": 354,
+    "line_number": 7,
+    "start_sec": 38.13,
+    "end_sec": 38.61,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 71,
+    "char_offset": 359,
+    "line_number": 7,
+    "start_sec": 38.61,
+    "end_sec": 38.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "be",
+    "word_index": 72,
+    "char_offset": 361,
+    "line_number": 7,
+    "start_sec": 38.99,
+    "end_sec": 39.27,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "confident.",
+    "word_index": 73,
+    "char_offset": 364,
+    "line_number": 7,
+    "start_sec": 39.27,
+    "end_sec": 40.05,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "One",
+    "word_index": 74,
+    "char_offset": 375,
+    "line_number": 7,
+    "start_sec": 41.31,
+    "end_sec": 42.11,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "thing",
+    "word_index": 75,
+    "char_offset": 379,
+    "line_number": 7,
+    "start_sec": 42.11,
+    "end_sec": 42.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "have",
+    "word_index": 76,
+    "char_offset": 385,
+    "line_number": 7,
+    "start_sec": 42.59,
+    "end_sec": 42.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 77,
+    "char_offset": 390,
+    "line_number": 7,
+    "start_sec": 42.99,
+    "end_sec": 43.29,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "desired",
+    "word_index": 78,
+    "char_offset": 392,
+    "line_number": 7,
+    "start_sec": 43.29,
+    "end_sec": 43.83,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 79,
+    "char_offset": 400,
+    "line_number": 7,
+    "start_sec": 43.83,
+    "end_sec": 44.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "that",
+    "word_index": 82,
+    "char_offset": 414,
+    "line_number": 8,
+    "start_sec": 45.01,
+    "end_sec": 45.19,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 84,
+    "char_offset": 424,
+    "line_number": 8,
+    "start_sec": 45.57,
+    "end_sec": 45.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "seek",
+    "word_index": 85,
+    "char_offset": 426,
+    "line_number": 8,
+    "start_sec": 45.87,
+    "end_sec": 46.31,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "after,",
+    "word_index": 86,
+    "char_offset": 431,
+    "line_number": 8,
+    "start_sec": 46.31,
+    "end_sec": 46.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "that",
+    "word_index": 87,
+    "char_offset": 438,
+    "line_number": 8,
+    "start_sec": 47.87,
+    "end_sec": 48.15,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 88,
+    "char_offset": 443,
+    "line_number": 8,
+    "start_sec": 48.15,
+    "end_sec": 48.79,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "dwell",
+    "word_index": 90,
+    "char_offset": 449,
+    "line_number": 8,
+    "start_sec": 49.21,
+    "end_sec": 49.75,
+    "confidence": 0.8889
+  },
+  {
+    "ref_word": "in",
+    "word_index": 91,
+    "char_offset": 455,
+    "line_number": 8,
+    "start_sec": 49.75,
+    "end_sec": 50.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 92,
+    "char_offset": 458,
+    "line_number": 8,
+    "start_sec": 50.03,
+    "end_sec": 50.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 94,
+    "char_offset": 469,
+    "line_number": 9,
+    "start_sec": 50.53,
+    "end_sec": 50.81,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 95,
+    "char_offset": 472,
+    "line_number": 9,
+    "start_sec": 50.81,
+    "end_sec": 50.97,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 98,
+    "char_offset": 485,
+    "line_number": 9,
+    "start_sec": 51.85,
+    "end_sec": 52.21,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "days",
+    "word_index": 99,
+    "char_offset": 489,
+    "line_number": 9,
+    "start_sec": 52.21,
+    "end_sec": 52.63,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 100,
+    "char_offset": 494,
+    "line_number": 9,
+    "start_sec": 52.63,
+    "end_sec": 52.97,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 101,
+    "char_offset": 497,
+    "line_number": 9,
+    "start_sec": 52.97,
+    "end_sec": 53.27,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "life,",
+    "word_index": 102,
+    "char_offset": 500,
+    "line_number": 9,
+    "start_sec": 53.27,
+    "end_sec": 53.93,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "to",
+    "word_index": 103,
+    "char_offset": 506,
+    "line_number": 9,
+    "start_sec": 54.67,
+    "end_sec": 54.77,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 105,
+    "char_offset": 516,
+    "line_number": 9,
+    "start_sec": 55.25,
+    "end_sec": 55.71,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "beauty",
+    "word_index": 106,
+    "char_offset": 520,
+    "line_number": 9,
+    "start_sec": 55.71,
+    "end_sec": 56.27,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 107,
+    "char_offset": 527,
+    "line_number": 9,
+    "start_sec": 56.27,
+    "end_sec": 56.57,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 108,
+    "char_offset": 531,
+    "line_number": 10,
+    "start_sec": 56.57,
+    "end_sec": 56.77,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 110,
+    "char_offset": 541,
+    "line_number": 10,
+    "start_sec": 57.17,
+    "end_sec": 57.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "to",
+    "word_index": 111,
+    "char_offset": 545,
+    "line_number": 10,
+    "start_sec": 57.87,
+    "end_sec": 58.21,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "inquire",
+    "word_index": 112,
+    "char_offset": 548,
+    "line_number": 10,
+    "start_sec": 58.21,
+    "end_sec": 58.89,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 113,
+    "char_offset": 556,
+    "line_number": 10,
+    "start_sec": 58.89,
+    "end_sec": 59.35,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "His",
+    "word_index": 114,
+    "char_offset": 559,
+    "line_number": 10,
+    "start_sec": 59.35,
+    "end_sec": 59.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "For",
+    "word_index": 116,
+    "char_offset": 571,
+    "line_number": 10,
+    "start_sec": 60.77,
+    "end_sec": 61.11,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 117,
+    "char_offset": 575,
+    "line_number": 10,
+    "start_sec": 61.11,
+    "end_sec": 61.33,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "trouble",
+    "word_index": 121,
+    "char_offset": 590,
+    "line_number": 10,
+    "start_sec": 62.11,
+    "end_sec": 62.49,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "he",
+    "word_index": 122,
+    "char_offset": 599,
+    "line_number": 11,
+    "start_sec": 62.49,
+    "end_sec": 63.15,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "shall",
+    "word_index": 123,
+    "char_offset": 602,
+    "line_number": 11,
+    "start_sec": 63.15,
+    "end_sec": 63.53,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "hide",
+    "word_index": 124,
+    "char_offset": 608,
+    "line_number": 11,
+    "start_sec": 63.53,
+    "end_sec": 64.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me",
+    "word_index": 125,
+    "char_offset": 613,
+    "line_number": 11,
+    "start_sec": 64.03,
+    "end_sec": 64.47,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 126,
+    "char_offset": 616,
+    "line_number": 11,
+    "start_sec": 64.47,
+    "end_sec": 64.71,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "In",
+    "word_index": 129,
+    "char_offset": 633,
+    "line_number": 11,
+    "start_sec": 66.25,
+    "end_sec": 66.47,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 132,
+    "char_offset": 647,
+    "line_number": 11,
+    "start_sec": 67.11,
+    "end_sec": 67.45,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "his",
+    "word_index": 133,
+    "char_offset": 650,
+    "line_number": 11,
+    "start_sec": 67.45,
+    "end_sec": 67.75,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "tabernacle",
+    "word_index": 134,
+    "char_offset": 654,
+    "line_number": 11,
+    "start_sec": 67.75,
+    "end_sec": 68.53,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "shall",
+    "word_index": 135,
+    "char_offset": 666,
+    "line_number": 12,
+    "start_sec": 68.53,
+    "end_sec": 69.03,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "he",
+    "word_index": 136,
+    "char_offset": 672,
+    "line_number": 12,
+    "start_sec": 69.03,
+    "end_sec": 69.39,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "hide",
+    "word_index": 137,
+    "char_offset": 675,
+    "line_number": 12,
+    "start_sec": 69.39,
+    "end_sec": 70.07,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me.",
+    "word_index": 138,
+    "char_offset": 680,
+    "line_number": 12,
+    "start_sec": 70.07,
+    "end_sec": 70.41,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "He",
+    "word_index": 139,
+    "char_offset": 684,
+    "line_number": 12,
+    "start_sec": 71.03,
+    "end_sec": 71.17,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up",
+    "word_index": 143,
+    "char_offset": 700,
+    "line_number": 12,
+    "start_sec": 72.13,
+    "end_sec": 72.65,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "upon",
+    "word_index": 144,
+    "char_offset": 703,
+    "line_number": 12,
+    "start_sec": 72.65,
+    "end_sec": 73.07,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "a",
+    "word_index": 145,
+    "char_offset": 708,
+    "line_number": 12,
+    "start_sec": 73.07,
+    "end_sec": 73.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 147,
+    "char_offset": 717,
+    "line_number": 13,
+    "start_sec": 74.19,
+    "end_sec": 74.33,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "shall",
+    "word_index": 149,
+    "char_offset": 725,
+    "line_number": 13,
+    "start_sec": 74.89,
+    "end_sec": 75.55,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "mine",
+    "word_index": 150,
+    "char_offset": 731,
+    "line_number": 13,
+    "start_sec": 75.55,
+    "end_sec": 76.01,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "head",
+    "word_index": 151,
+    "char_offset": 736,
+    "line_number": 13,
+    "start_sec": 76.01,
+    "end_sec": 76.47,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "be",
+    "word_index": 152,
+    "char_offset": 741,
+    "line_number": 13,
+    "start_sec": 76.47,
+    "end_sec": 76.79,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "lifted",
+    "word_index": 153,
+    "char_offset": 744,
+    "line_number": 13,
+    "start_sec": 76.79,
+    "end_sec": 77.17,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up",
+    "word_index": 154,
+    "char_offset": 751,
+    "line_number": 13,
+    "start_sec": 77.17,
+    "end_sec": 77.49,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "above",
+    "word_index": 155,
+    "char_offset": 754,
+    "line_number": 13,
+    "start_sec": 77.49,
+    "end_sec": 77.93,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "mine",
+    "word_index": 156,
+    "char_offset": 760,
+    "line_number": 13,
+    "start_sec": 77.93,
+    "end_sec": 78.43,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "enemies",
+    "word_index": 157,
+    "char_offset": 765,
+    "line_number": 13,
+    "start_sec": 78.43,
+    "end_sec": 78.93,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "round",
+    "word_index": 158,
+    "char_offset": 773,
+    "line_number": 13,
+    "start_sec": 78.93,
+    "end_sec": 79.35,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "about",
+    "word_index": 159,
+    "char_offset": 779,
+    "line_number": 13,
+    "start_sec": 79.35,
+    "end_sec": 79.75,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me.",
+    "word_index": 160,
+    "char_offset": 786,
+    "line_number": 14,
+    "start_sec": 79.75,
+    "end_sec": 80.09,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Therefore",
+    "word_index": 161,
+    "char_offset": 790,
+    "line_number": 14,
+    "start_sec": 81.11,
+    "end_sec": 81.89,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "will",
+    "word_index": 162,
+    "char_offset": 800,
+    "line_number": 14,
+    "start_sec": 81.89,
+    "end_sec": 82.33,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 163,
+    "char_offset": 805,
+    "line_number": 14,
+    "start_sec": 82.33,
+    "end_sec": 82.61,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "offer",
+    "word_index": 164,
+    "char_offset": 807,
+    "line_number": 14,
+    "start_sec": 82.61,
+    "end_sec": 83.05,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 165,
+    "char_offset": 813,
+    "line_number": 14,
+    "start_sec": 83.05,
+    "end_sec": 83.35,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "his",
+    "word_index": 166,
+    "char_offset": 816,
+    "line_number": 14,
+    "start_sec": 83.35,
+    "end_sec": 83.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 171,
+    "char_offset": 851,
+    "line_number": 15,
+    "start_sec": 95.76,
+    "end_sec": 96.04,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "mercy",
+    "word_index": 192,
+    "char_offset": 951,
+    "line_number": 17,
+    "start_sec": 98.56,
+    "end_sec": 99.08,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "also",
+    "word_index": 193,
+    "char_offset": 957,
+    "line_number": 17,
+    "start_sec": 99.08,
+    "end_sec": 99.62,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "upon",
+    "word_index": 194,
+    "char_offset": 962,
+    "line_number": 17,
+    "start_sec": 99.62,
+    "end_sec": 100.14,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me,",
+    "word_index": 195,
+    "char_offset": 967,
+    "line_number": 17,
+    "start_sec": 100.14,
+    "end_sec": 100.5,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 196,
+    "char_offset": 971,
+    "line_number": 17,
+    "start_sec": 100.5,
+    "end_sec": 100.86,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "answer",
+    "word_index": 197,
+    "char_offset": 976,
+    "line_number": 18,
+    "start_sec": 100.86,
+    "end_sec": 101.42,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me.",
+    "word_index": 198,
+    "char_offset": 983,
+    "line_number": 18,
+    "start_sec": 101.42,
+    "end_sec": 101.78,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "When",
+    "word_index": 199,
+    "char_offset": 987,
+    "line_number": 18,
+    "start_sec": 102.72,
+    "end_sec": 103.18,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "thou",
+    "word_index": 200,
+    "char_offset": 992,
+    "line_number": 18,
+    "start_sec": 103.18,
+    "end_sec": 103.58,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "saidst,",
+    "word_index": 201,
+    "char_offset": 997,
+    "line_number": 18,
+    "start_sec": 103.58,
+    "end_sec": 104.68,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Seek",
+    "word_index": 202,
+    "char_offset": 1005,
+    "line_number": 18,
+    "start_sec": 105.22,
+    "end_sec": 105.42,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 204,
+    "char_offset": 1013,
+    "line_number": 18,
+    "start_sec": 105.84,
+    "end_sec": 106.28,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "face,",
+    "word_index": 205,
+    "char_offset": 1017,
+    "line_number": 19,
+    "start_sec": 106.28,
+    "end_sec": 106.88,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 206,
+    "char_offset": 1023,
+    "line_number": 19,
+    "start_sec": 107.88,
+    "end_sec": 108.1,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "unto",
+    "word_index": 209,
+    "char_offset": 1037,
+    "line_number": 19,
+    "start_sec": 108.8,
+    "end_sec": 109.1,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "thee,",
+    "word_index": 210,
+    "char_offset": 1042,
+    "line_number": 19,
+    "start_sec": 109.1,
+    "end_sec": 109.5,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Thy",
+    "word_index": 211,
+    "char_offset": 1048,
+    "line_number": 19,
+    "start_sec": 109.5,
+    "end_sec": 110.36,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "face,",
+    "word_index": 212,
+    "char_offset": 1052,
+    "line_number": 19,
+    "start_sec": 110.36,
+    "end_sec": 110.92,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Lord,",
+    "word_index": 213,
+    "char_offset": 1058,
+    "line_number": 19,
+    "start_sec": 111.16,
+    "end_sec": 111.42,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "will",
+    "word_index": 214,
+    "char_offset": 1064,
+    "line_number": 19,
+    "start_sec": 111.42,
+    "end_sec": 111.8,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 215,
+    "char_offset": 1069,
+    "line_number": 19,
+    "start_sec": 111.8,
+    "end_sec": 112.16,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "seek.",
+    "word_index": 216,
+    "char_offset": 1071,
+    "line_number": 19,
+    "start_sec": 112.16,
+    "end_sec": 112.68,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Hide",
+    "word_index": 217,
+    "char_offset": 1077,
+    "line_number": 19,
+    "start_sec": 113.82,
+    "end_sec": 114.26,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "not",
+    "word_index": 218,
+    "char_offset": 1082,
+    "line_number": 19,
+    "start_sec": 114.26,
+    "end_sec": 114.58,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "thy",
+    "word_index": 219,
+    "char_offset": 1086,
+    "line_number": 19,
+    "start_sec": 114.58,
+    "end_sec": 114.9,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "face",
+    "word_index": 220,
+    "char_offset": 1090,
+    "line_number": 19,
+    "start_sec": 114.9,
+    "end_sec": 115.3,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "far",
+    "word_index": 221,
+    "char_offset": 1095,
+    "line_number": 19,
+    "start_sec": 115.3,
+    "end_sec": 115.74,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "from",
+    "word_index": 222,
+    "char_offset": 1099,
+    "line_number": 19,
+    "start_sec": 115.74,
+    "end_sec": 116.06,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me.",
+    "word_index": 223,
+    "char_offset": 1104,
+    "line_number": 19,
+    "start_sec": 116.06,
+    "end_sec": 116.38,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Put",
+    "word_index": 224,
+    "char_offset": 1108,
+    "line_number": 19,
+    "start_sec": 116.86,
+    "end_sec": 116.94,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "servant",
+    "word_index": 227,
+    "char_offset": 1120,
+    "line_number": 19,
+    "start_sec": 117.64,
+    "end_sec": 118.1,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "away",
+    "word_index": 228,
+    "char_offset": 1128,
+    "line_number": 19,
+    "start_sec": 118.1,
+    "end_sec": 118.64,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 229,
+    "char_offset": 1133,
+    "line_number": 19,
+    "start_sec": 118.64,
+    "end_sec": 119.1,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "anger.",
+    "word_index": 230,
+    "char_offset": 1136,
+    "line_number": 19,
+    "start_sec": 119.1,
+    "end_sec": 119.62,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Thou",
+    "word_index": 231,
+    "char_offset": 1143,
+    "line_number": 19,
+    "start_sec": 120.3,
+    "end_sec": 120.6,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "hast",
+    "word_index": 232,
+    "char_offset": 1148,
+    "line_number": 19,
+    "start_sec": 120.6,
+    "end_sec": 121.0,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "been",
+    "word_index": 233,
+    "char_offset": 1153,
+    "line_number": 19,
+    "start_sec": 121.0,
+    "end_sec": 121.34,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 234,
+    "char_offset": 1158,
+    "line_number": 19,
+    "start_sec": 121.34,
+    "end_sec": 121.76,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "help.",
+    "word_index": 235,
+    "char_offset": 1161,
+    "line_number": 19,
+    "start_sec": 121.76,
+    "end_sec": 122.2,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Leave",
+    "word_index": 236,
+    "char_offset": 1167,
+    "line_number": 19,
+    "start_sec": 123.2,
+    "end_sec": 123.52,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me",
+    "word_index": 237,
+    "char_offset": 1174,
+    "line_number": 20,
+    "start_sec": 123.52,
+    "end_sec": 123.9,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "not,",
+    "word_index": 238,
+    "char_offset": 1177,
+    "line_number": 20,
+    "start_sec": 123.9,
+    "end_sec": 124.26,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "neither",
+    "word_index": 239,
+    "char_offset": 1182,
+    "line_number": 20,
+    "start_sec": 125.12,
+    "end_sec": 125.42,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "forsake",
+    "word_index": 240,
+    "char_offset": 1190,
+    "line_number": 20,
+    "start_sec": 125.42,
+    "end_sec": 126.06,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me,",
+    "word_index": 241,
+    "char_offset": 1198,
+    "line_number": 20,
+    "start_sec": 126.06,
+    "end_sec": 126.46,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "O",
+    "word_index": 242,
+    "char_offset": 1202,
+    "line_number": 20,
+    "start_sec": 126.82,
+    "end_sec": 127.3,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "God",
+    "word_index": 243,
+    "char_offset": 1204,
+    "line_number": 20,
+    "start_sec": 127.3,
+    "end_sec": 127.8,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 244,
+    "char_offset": 1208,
+    "line_number": 20,
+    "start_sec": 127.8,
+    "end_sec": 128.2,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 245,
+    "char_offset": 1211,
+    "line_number": 20,
+    "start_sec": 128.2,
+    "end_sec": 128.5,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "salvation.",
+    "word_index": 246,
+    "char_offset": 1214,
+    "line_number": 20,
+    "start_sec": 128.5,
+    "end_sec": 129.3,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "When",
+    "word_index": 247,
+    "char_offset": 1225,
+    "line_number": 20,
+    "start_sec": 129.98,
+    "end_sec": 130.84,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 248,
+    "char_offset": 1230,
+    "line_number": 20,
+    "start_sec": 130.84,
+    "end_sec": 131.1,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "father",
+    "word_index": 249,
+    "char_offset": 1233,
+    "line_number": 20,
+    "start_sec": 131.1,
+    "end_sec": 131.54,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 250,
+    "char_offset": 1241,
+    "line_number": 21,
+    "start_sec": 131.54,
+    "end_sec": 131.8,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "my",
+    "word_index": 251,
+    "char_offset": 1245,
+    "line_number": 21,
+    "start_sec": 131.8,
+    "end_sec": 131.98,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "forsake",
+    "word_index": 253,
+    "char_offset": 1255,
+    "line_number": 21,
+    "start_sec": 132.36,
+    "end_sec": 132.88,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me,",
+    "word_index": 254,
+    "char_offset": 1263,
+    "line_number": 21,
+    "start_sec": 132.88,
+    "end_sec": 133.16,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "then",
+    "word_index": 255,
+    "char_offset": 1267,
+    "line_number": 21,
+    "start_sec": 133.56,
+    "end_sec": 133.7,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Lord",
+    "word_index": 257,
+    "char_offset": 1276,
+    "line_number": 21,
+    "start_sec": 134.06,
+    "end_sec": 134.5,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "will",
+    "word_index": 258,
+    "char_offset": 1281,
+    "line_number": 21,
+    "start_sec": 134.5,
+    "end_sec": 134.84,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "take",
+    "word_index": 259,
+    "char_offset": 1286,
+    "line_number": 21,
+    "start_sec": 134.84,
+    "end_sec": 135.22,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me",
+    "word_index": 260,
+    "char_offset": 1291,
+    "line_number": 21,
+    "start_sec": 135.22,
+    "end_sec": 135.64,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up.",
+    "word_index": 261,
+    "char_offset": 1294,
+    "line_number": 21,
+    "start_sec": 135.64,
+    "end_sec": 135.84,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Teach",
+    "word_index": 262,
+    "char_offset": 1298,
+    "line_number": 21,
+    "start_sec": 137.08,
+    "end_sec": 137.3,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Thy",
+    "word_index": 264,
+    "char_offset": 1308,
+    "line_number": 22,
+    "start_sec": 137.78,
+    "end_sec": 138.12,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "way,",
+    "word_index": 265,
+    "char_offset": 1312,
+    "line_number": 22,
+    "start_sec": 138.12,
+    "end_sec": 138.68,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "O",
+    "word_index": 266,
+    "char_offset": 1317,
+    "line_number": 22,
+    "start_sec": 138.68,
+    "end_sec": 139.26,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Lord,",
+    "word_index": 267,
+    "char_offset": 1319,
+    "line_number": 22,
+    "start_sec": 139.26,
+    "end_sec": 139.78,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me",
+    "word_index": 270,
+    "char_offset": 1334,
+    "line_number": 22,
+    "start_sec": 146.31,
+    "end_sec": 146.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 276,
+    "char_offset": 1361,
+    "line_number": 22,
+    "start_sec": 148.59,
+    "end_sec": 148.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "mine",
+    "word_index": 277,
+    "char_offset": 1365,
+    "line_number": 23,
+    "start_sec": 148.99,
+    "end_sec": 149.29,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "enemies.",
+    "word_index": 278,
+    "char_offset": 1370,
+    "line_number": 23,
+    "start_sec": 149.29,
+    "end_sec": 149.77,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "up",
+    "word_index": 294,
+    "char_offset": 1461,
+    "line_number": 24,
+    "start_sec": 152.69,
+    "end_sec": 152.97,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "against",
+    "word_index": 295,
+    "char_offset": 1464,
+    "line_number": 24,
+    "start_sec": 152.97,
+    "end_sec": 153.31,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "me,",
+    "word_index": 296,
+    "char_offset": 1473,
+    "line_number": 25,
+    "start_sec": 153.31,
+    "end_sec": 153.85,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 297,
+    "char_offset": 1477,
+    "line_number": 25,
+    "start_sec": 154.29,
+    "end_sec": 154.37,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "as",
+    "word_index": 299,
+    "char_offset": 1486,
+    "line_number": 25,
+    "start_sec": 154.89,
+    "end_sec": 155.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "breathe",
+    "word_index": 300,
+    "char_offset": 1489,
+    "line_number": 25,
+    "start_sec": 155.25,
+    "end_sec": 155.69,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "out",
+    "word_index": 301,
+    "char_offset": 1497,
+    "line_number": 25,
+    "start_sec": 155.69,
+    "end_sec": 156.33,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "cruelty.",
+    "word_index": 302,
+    "char_offset": 1501,
+    "line_number": 25,
+    "start_sec": 156.33,
+    "end_sec": 157.07,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 303,
+    "char_offset": 1510,
+    "line_number": 25,
+    "start_sec": 157.97,
+    "end_sec": 158.61,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "had",
+    "word_index": 304,
+    "char_offset": 1512,
+    "line_number": 25,
+    "start_sec": 158.61,
+    "end_sec": 159.13,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "fainted,",
+    "word_index": 305,
+    "char_offset": 1516,
+    "line_number": 25,
+    "start_sec": 159.13,
+    "end_sec": 159.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "unless",
+    "word_index": 306,
+    "char_offset": 1525,
+    "line_number": 25,
+    "start_sec": 160.37,
+    "end_sec": 160.77,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 307,
+    "char_offset": 1532,
+    "line_number": 25,
+    "start_sec": 160.77,
+    "end_sec": 161.25,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "had",
+    "word_index": 308,
+    "char_offset": 1534,
+    "line_number": 25,
+    "start_sec": 161.25,
+    "end_sec": 161.67,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "believed",
+    "word_index": 309,
+    "char_offset": 1538,
+    "line_number": 25,
+    "start_sec": 161.67,
+    "end_sec": 162.17,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "to",
+    "word_index": 310,
+    "char_offset": 1548,
+    "line_number": 26,
+    "start_sec": 162.17,
+    "end_sec": 162.59,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "see",
+    "word_index": 311,
+    "char_offset": 1551,
+    "line_number": 26,
+    "start_sec": 162.59,
+    "end_sec": 162.85,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 312,
+    "char_offset": 1555,
+    "line_number": 26,
+    "start_sec": 162.85,
+    "end_sec": 163.07,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 314,
+    "char_offset": 1568,
+    "line_number": 26,
+    "start_sec": 163.45,
+    "end_sec": 163.73,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 315,
+    "char_offset": 1571,
+    "line_number": 26,
+    "start_sec": 163.73,
+    "end_sec": 163.91,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "in",
+    "word_index": 317,
+    "char_offset": 1580,
+    "line_number": 26,
+    "start_sec": 164.23,
+    "end_sec": 164.69,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 318,
+    "char_offset": 1583,
+    "line_number": 26,
+    "start_sec": 164.69,
+    "end_sec": 164.89,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "of",
+    "word_index": 320,
+    "char_offset": 1592,
+    "line_number": 26,
+    "start_sec": 165.27,
+    "end_sec": 165.79,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 321,
+    "char_offset": 1595,
+    "line_number": 26,
+    "start_sec": 165.79,
+    "end_sec": 165.99,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Wait",
+    "word_index": 323,
+    "char_offset": 1607,
+    "line_number": 26,
+    "start_sec": 167.39,
+    "end_sec": 167.85,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "on",
+    "word_index": 324,
+    "char_offset": 1613,
+    "line_number": 27,
+    "start_sec": 167.85,
+    "end_sec": 168.53,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "the",
+    "word_index": 325,
+    "char_offset": 1616,
+    "line_number": 27,
+    "start_sec": 168.53,
+    "end_sec": 168.75,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "be",
+    "word_index": 327,
+    "char_offset": 1626,
+    "line_number": 27,
+    "start_sec": 169.87,
+    "end_sec": 170.01,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "and",
+    "word_index": 331,
+    "char_offset": 1646,
+    "line_number": 27,
+    "start_sec": 171.55,
+    "end_sec": 171.67,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "strengthen",
+    "word_index": 334,
+    "char_offset": 1659,
+    "line_number": 27,
+    "start_sec": 172.45,
+    "end_sec": 173.05,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "thine",
+    "word_index": 335,
+    "char_offset": 1670,
+    "line_number": 27,
+    "start_sec": 173.05,
+    "end_sec": 173.57,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "heart",
+    "word_index": 336,
+    "char_offset": 1677,
+    "line_number": 28,
+    "start_sec": 173.57,
+    "end_sec": 173.87,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "Wait,",
+    "word_index": 337,
+    "char_offset": 1683,
+    "line_number": 28,
+    "start_sec": 174.65,
+    "end_sec": 174.93,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "I",
+    "word_index": 338,
+    "char_offset": 1689,
+    "line_number": 28,
+    "start_sec": 175.31,
+    "end_sec": 175.43,
+    "confidence": 1.0
+  },
+  {
+    "ref_word": "on",
+    "word_index": 340,
+    "char_offset": 1696,
+    "line_number": 28,
+    "start_sec": 176.37,
+    "end_sec": 176.55,
+    "confidence": 1.0
+  }
+]

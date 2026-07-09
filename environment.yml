@@ -11,3 +11,4 @@ dependencies:
     - rapidfuzz==3.9.7
     - numpy>=1.26,<2.0
     - pytest>=8.0
+    - sounddevice>=0.4

@@ -1,4 +1,5 @@
 import subprocess
+import threading
 from typing import Iterator, Protocol
 import numpy as np
 
@@ -44,3 +45,34 @@ class FileAudioSource:
         finally:
             proc.stdout.close()
             proc.wait()
+
+
+class MicrophoneAudioSource:
+    def __init__(self, chunk_seconds: float = 5.0, sample_rate: int = 16000):
+        self.chunk_seconds = chunk_seconds
+        self._sample_rate = sample_rate
+        self._stop = threading.Event()
+
+    @property
+    def sample_rate(self) -> int:
+        return self._sample_rate
+
+    def stop(self) -> None:
+        self._stop.set()
+
+    def chunks(self) -> Iterator[np.ndarray]:
+        import sounddevice as sd
+
+        chunk_samples = int(self.chunk_seconds * self._sample_rate)
+
+        while not self._stop.is_set():
+            audio = sd.rec(
+                chunk_samples,
+                samplerate=self._sample_rate,
+                channels=1,
+                dtype="float32",
+            )
+            sd.wait()
+            if self._stop.is_set():
+                break
+            yield audio.flatten()

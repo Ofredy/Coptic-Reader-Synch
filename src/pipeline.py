@@ -7,7 +7,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from aligner import AlignedEntry, TextAligner
-from audio_source import FileAudioSource
+from audio_source import AudioSource, FileAudioSource, MicrophoneAudioSource
 from transcriber import WhisperTranscriber
 
 
@@ -35,33 +35,25 @@ def run(
     return entries
 
 
-def run_live(
-    audio_path: str,
+def run_streaming(
+    source: AudioSource,
     reference_path: str,
     model_size: str = "base",
-    chunk_seconds: float = 5.0,
+    playback_path: str | None = None,
 ) -> None:
     """
-    Real-time demo mode.
-    - Thread 1: plays audio via afplay
-    - Thread 2: feeds chunks through Whisper → aligner
-    - Main thread: redraws terminal every 0.5s with current line highlighted
+    Streaming mode: feeds an AudioSource through Whisper → aligner in real time.
+    - If playback_path is given, plays the file via afplay and stops when it ends.
+    - Otherwise runs until Ctrl+C (mic mode).
     """
     reference_text = Path(reference_path).read_text()
     lines = reference_text.splitlines()
-    total_lines = len(lines)
 
     transcriber = WhisperTranscriber(model_size=model_size)
     aligner = TextAligner(reference_text)
-    source = FileAudioSource(audio_path, chunk_seconds=chunk_seconds)
 
     done = threading.Event()
-    start_time: list[float] = []  # set when audio actually begins
-
-    def play_audio():
-        start_time.append(time.time())
-        subprocess.run(["afplay", audio_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        done.set()
+    start_time: list[float] = []
 
     def process_chunks():
         for token in transcriber.transcribe_chunks(source):
@@ -69,25 +61,37 @@ def run_live(
             if done.is_set():
                 break
 
-    audio_thread = threading.Thread(target=play_audio, daemon=True)
     chunk_thread = threading.Thread(target=process_chunks, daemon=True)
-
-    audio_thread.start()
     chunk_thread.start()
+
+    if playback_path:
+        def play_audio():
+            start_time.append(time.time())
+            subprocess.run(["afplay", playback_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            done.set()
+
+        audio_thread = threading.Thread(target=play_audio, daemon=True)
+        audio_thread.start()
 
     _render(lines, current_line=1)
 
-    while not done.is_set():
-        time.sleep(0.5)
-        if start_time:
-            elapsed = time.time() - start_time[0]
-            current = _line_at_time(aligner.results(), elapsed) or aligner.current_line()
-        else:
-            current = 1
-        _render(lines, current_line=current)
+    try:
+        while not done.is_set():
+            time.sleep(0.5)
+            if playback_path and start_time:
+                elapsed = time.time() - start_time[0]
+                current = _line_at_time(aligner.results(), elapsed) or aligner.current_line()
+            else:
+                current = aligner.current_line()
+            _render(lines, current_line=current)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        done.set()
+        if isinstance(source, MicrophoneAudioSource):
+            source.stop()
 
-    # Final render
-    _render(lines, current_line=len(lines))
+    _render(lines, current_line=aligner.current_line())
     chunk_thread.join(timeout=5)
     print("\n\n[done]")
 
@@ -119,15 +123,21 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="Coptic Reader Sync")
-    parser.add_argument("audio", help="Path to audio file")
     parser.add_argument("text", help="Path to reference text file")
-    parser.add_argument("--mode", choices=["live", "batch"], default="live")
+    parser.add_argument("--mode", choices=["mic", "recorded", "batch"], default="mic")
+    parser.add_argument("--audio", help="Path to audio file (required for recorded and batch modes)")
     parser.add_argument("--output", default="alignment.json", help="Output path for batch mode")
     parser.add_argument("--model", default="base")
     args = parser.parse_args()
 
-    if args.mode == "live":
-        run_live(args.audio, args.text, model_size=args.model)
+    if args.mode == "mic":
+        run_streaming(MicrophoneAudioSource(), args.text, model_size=args.model)
+    elif args.mode == "recorded":
+        if not args.audio:
+            parser.error("--audio is required for recorded mode")
+        run_streaming(FileAudioSource(args.audio), args.text, model_size=args.model, playback_path=args.audio)
     else:
+        if not args.audio:
+            parser.error("--audio is required for batch mode")
         entries = run(args.audio, args.text, args.output, model_size=args.model)
         print(f"Aligned {len(entries)} words. Written to {args.output}")

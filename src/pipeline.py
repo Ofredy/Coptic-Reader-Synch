@@ -1,4 +1,5 @@
 import json
+import shutil
 import subprocess
 import sys
 import threading
@@ -108,14 +109,26 @@ def _line_at_time(entries: list[AlignedEntry], elapsed_sec: float) -> int | None
 
 
 def _render(lines: list[str], current_line: int) -> None:
-    """Clear terminal and redraw all lines, highlighting the current one."""
+    """Clear terminal and redraw a window of lines centered on current_line."""
     sys.stdout.write("\033[2J\033[H")  # clear screen, move cursor to top
     sys.stdout.write(f"  Tracking: line {current_line} of {len(lines)}\n\n")
-    for i, line in enumerate(lines, start=1):
+
+    term_rows = shutil.get_terminal_size(fallback=(80, 24)).lines
+    context = max(3, (term_rows - 6) // 2)  # lines of context above/below current
+
+    start = max(1, current_line - context)
+    end = min(len(lines), current_line + context)
+
+    if start > 1:
+        sys.stdout.write("  ⋮\n")
+    for i in range(start, end + 1):
+        line = lines[i - 1]
         if i == current_line:
             sys.stdout.write(f"\033[1;32m▶ {line}\033[0m\n")  # bold green
         else:
             sys.stdout.write(f"  {line}\n")
+    if end < len(lines):
+        sys.stdout.write("  ⋮\n")
     sys.stdout.flush()
 
 

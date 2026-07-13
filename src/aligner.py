@@ -10,6 +10,14 @@ from transcriber import WordToken
 MAX_WORDS_PER_SEC   = 4.0   # ~240 wpm — upper bound for realistic speech
 MAX_CONSECUTIVE_MISSES = 5  # misses in a row before declaring lost
 RECOVERY_WINDOW     = 50    # wider search window when lost
+DISTANCE_PENALTY_MAX = 15.0 # fuzzy-score penalty applied to the farthest
+                             # candidate in the current search window (scaled
+                             # linearly by position within the window)
+PHRASE_LEN = 3               # consecutive tokens matched as a unit before
+                              # falling back to single-word matching. A short
+                              # phrase disambiguates repeated/common words
+                              # ("in", "up", "me") far better than matching
+                              # them one at a time.
 
 
 @dataclass
@@ -77,11 +85,62 @@ class TextAligner:
         self._consecutive_misses = 0
         self._lost = False
 
+        # Rolling buffer of the most recent PHRASE_LEN tokens, used to try a
+        # phrase-level match before falling back to single-word matching.
+        self._pending: list[tuple[WordToken, str]] = []
+
     def feed(self, token: WordToken) -> Optional[AlignedEntry]:
         clean_token = re.sub(r"[^\w']", "", token.word).lower()
         if not clean_token:
             return None
 
+        self._pending.append((token, clean_token))
+        if len(self._pending) < PHRASE_LEN:
+            return None  # filling the buffer — only happens at stream start
+
+        search_start, candidates = self._search_window()
+        if not candidates:
+            self._pending.pop(0)
+            return None
+
+        # --- Attempt 1: match the buffered phrase as a unit ---------------
+        # A short phrase disambiguates repeated/common words far better than
+        # matching them one at a time (see PHRASE_LEN comment above).
+        phrase_clean = " ".join(c for _, c in self._pending)
+        best_phrase_score = 0.0
+        best_phrase_i = None
+        for i in range(len(candidates) - PHRASE_LEN + 1):
+            ref_phrase = " ".join(r.clean for r in candidates[i:i + PHRASE_LEN])
+            score = fuzz.ratio(phrase_clean, ref_phrase)
+            if score > best_phrase_score:
+                best_phrase_score = score
+                best_phrase_i = i
+
+        if best_phrase_score >= self._threshold:
+            matched_refs = candidates[best_phrase_i:best_phrase_i + PHRASE_LEN]
+            entries = [
+                AlignedEntry(
+                    ref_word=ref.word,
+                    word_index=ref.word_index,
+                    char_offset=ref.char_offset,
+                    line_number=ref.line_number,
+                    start_sec=tok.start_sec,
+                    end_sec=tok.end_sec,
+                    confidence=round(best_phrase_score / 100.0, 4),
+                )
+                for (tok, _), ref in zip(self._pending, matched_refs)
+            ]
+            self._commit(entries, new_cursor=search_start + best_phrase_i + PHRASE_LEN)
+            self._pending.clear()
+            return entries[-1]
+
+        # --- Attempt 2: fall back to matching just the oldest pending token
+        oldest_tok, oldest_clean = self._pending[0]
+        entry = self._match_single(oldest_tok, oldest_clean, search_start, candidates)
+        self._pending.pop(0)
+        return entry
+
+    def _search_window(self) -> tuple[int, list[RefWord]]:
         # In recovery mode search a wider window from the last known good position,
         # not from wherever the cursor drifted to.
         if self._lost:
@@ -90,24 +149,33 @@ class TextAligner:
         else:
             search_start = self._cursor
             search_end   = search_start + self._window
+        return search_start, self._ref_words[search_start:search_end]
 
-        candidates = self._ref_words[search_start:search_end]
-        if not candidates:
-            return None
-
+    def _match_single(
+        self, token: WordToken, clean_token: str, search_start: int, candidates: list[RefWord]
+    ) -> Optional[AlignedEntry]:
+        # Score each candidate on text similarity, then bias selection toward
+        # the nearest good-enough match over a better-but-farther one — a
+        # distant candidate must clearly outscore a near one, not just barely
+        # beat it, to win. Without this, a common/short word (e.g. "in", "up")
+        # can false-match a coincidental later occurrence and drag the cursor
+        # far ahead, stranding every real word in between as unmatchable.
+        n = len(candidates)
+        best_adj_score = -1.0
         best_score = 0.0
         best_idx   = None
         for i, ref in enumerate(candidates):
             score = fuzz.ratio(clean_token, ref.clean)
-            if score > best_score:
-                best_score = score
-                best_idx   = i
+            penalty = (i / n) * DISTANCE_PENALTY_MAX if n > 1 else 0.0
+            adj_score = score - penalty
+            if adj_score > best_adj_score:
+                best_adj_score = adj_score
+                best_score     = score
+                best_idx       = i
 
         # --- Low confidence: token didn't match anything useful ---
         if best_score < self._threshold:
-            self._consecutive_misses += 1
-            if self._consecutive_misses >= MAX_CONSECUTIVE_MISSES:
-                self._lost = True
+            self._register_miss()
             return None
 
         # --- Temporal sanity check (normal mode only) ---
@@ -117,14 +185,10 @@ class TextAligner:
             if elapsed > 0:
                 words_advanced = best_idx + 1
                 if words_advanced > elapsed * MAX_WORDS_PER_SEC:
-                    self._consecutive_misses += 1
-                    if self._consecutive_misses >= MAX_CONSECUTIVE_MISSES:
-                        self._lost = True
+                    self._register_miss()
                     return None
 
         ref = candidates[best_idx]
-        new_cursor = search_start + best_idx + 1
-
         entry = AlignedEntry(
             ref_word=ref.word,
             word_index=ref.word_index,
@@ -134,17 +198,23 @@ class TextAligner:
             end_sec=token.end_sec,
             confidence=round(best_score / 100.0, 4),
         )
-
-        with self._lock:
-            self._cursor           = new_cursor
-            self._last_good_cursor = new_cursor
-            self._last_good_time   = token.start_sec
-            self._consecutive_misses = 0
-            self._lost             = False
-            self._results.append(entry)
-            self._current_line     = ref.line_number
-
+        self._commit([entry], new_cursor=search_start + best_idx + 1)
         return entry
+
+    def _register_miss(self) -> None:
+        self._consecutive_misses += 1
+        if self._consecutive_misses >= MAX_CONSECUTIVE_MISSES:
+            self._lost = True
+
+    def _commit(self, entries: list[AlignedEntry], new_cursor: int) -> None:
+        with self._lock:
+            self._cursor              = new_cursor
+            self._last_good_cursor    = new_cursor
+            self._last_good_time      = entries[-1].start_sec
+            self._consecutive_misses  = 0
+            self._lost                = False
+            self._results.extend(entries)
+            self._current_line        = entries[-1].line_number
 
     def current_line(self) -> int:
         with self._lock:

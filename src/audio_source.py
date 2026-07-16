@@ -1,3 +1,4 @@
+import queue
 import subprocess
 import threading
 from typing import Iterator, Protocol
@@ -11,7 +12,7 @@ class AudioSource(Protocol):
 
 
 class FileAudioSource:
-    def __init__(self, path: str, chunk_seconds: float = 5.0, sample_rate: int = 16000):
+    def __init__(self, path: str, chunk_seconds: float = 1.0, sample_rate: int = 16000):
         self.path = path
         self.chunk_seconds = chunk_seconds
         self._sample_rate = sample_rate
@@ -48,10 +49,11 @@ class FileAudioSource:
 
 
 class MicrophoneAudioSource:
-    def __init__(self, chunk_seconds: float = 5.0, sample_rate: int = 16000):
+    def __init__(self, chunk_seconds: float = 1.0, sample_rate: int = 16000):
         self.chunk_seconds = chunk_seconds
         self._sample_rate = sample_rate
         self._stop = threading.Event()
+        self._queue: "queue.Queue[np.ndarray]" = queue.Queue()
 
     @property
     def sample_rate(self) -> int:
@@ -64,15 +66,25 @@ class MicrophoneAudioSource:
         import sounddevice as sd
 
         chunk_samples = int(self.chunk_seconds * self._sample_rate)
+        buffer = np.empty((0,), dtype=np.float32)
 
-        while not self._stop.is_set():
-            audio = sd.rec(
-                chunk_samples,
-                samplerate=self._sample_rate,
-                channels=1,
-                dtype="float32",
-            )
-            sd.wait()
-            if self._stop.is_set():
-                break
-            yield audio.flatten()
+        def callback(indata, frames, time_info, status):
+            self._queue.put(indata[:, 0].copy())
+
+        # InputStream records continuously in its own thread, so capture
+        # never pauses while a chunk is being transcribed downstream.
+        with sd.InputStream(
+            samplerate=self._sample_rate,
+            channels=1,
+            dtype="float32",
+            callback=callback,
+        ):
+            while not self._stop.is_set():
+                try:
+                    data = self._queue.get(timeout=0.1)
+                except queue.Empty:
+                    continue
+                buffer = np.concatenate([buffer, data])
+                while len(buffer) >= chunk_samples:
+                    yield buffer[:chunk_samples]
+                    buffer = buffer[chunk_samples:]

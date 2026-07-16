@@ -141,14 +141,15 @@ if __name__ == "__main__":
     parser.add_argument("--audio", help="Path to audio file (required for recorded and batch modes)")
     parser.add_argument("--output", default="alignment.json", help="Output path for batch mode")
     parser.add_argument("--model", default="base")
+    parser.add_argument("--chunk-seconds", type=float, default=1.0, help="Audio chunk size fed to Whisper (mic/recorded modes)")
     args = parser.parse_args()
 
     if args.mode == "mic":
-        run_streaming(MicrophoneAudioSource(), args.text, model_size=args.model)
+        run_streaming(MicrophoneAudioSource(chunk_seconds=args.chunk_seconds), args.text, model_size=args.model)
     elif args.mode == "recorded":
         if not args.audio:
             parser.error("--audio is required for recorded mode")
-        run_streaming(FileAudioSource(args.audio), args.text, model_size=args.model, playback_path=args.audio)
+        run_streaming(FileAudioSource(args.audio, chunk_seconds=args.chunk_seconds), args.text, model_size=args.model, playback_path=args.audio)
     else:
         if not args.audio:
             parser.error("--audio is required for batch mode")

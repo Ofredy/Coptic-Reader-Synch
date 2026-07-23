@@ -13,3 +13,4 @@ dependencies:
     - pytest>=8.0
     - sounddevice>=0.4
     - matplotlib>=3.8
+    - librosa>=0.10
